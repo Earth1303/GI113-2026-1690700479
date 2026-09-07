@@ -1,5 +1,12 @@
 ﻿namespace Lab04
 {
+     /*
+ * Student ID : 1690700479
+ * Name       : Chutchapol Changsee
+ * Section    : 129A
+ * No.        : 
+ * Course     : GI113 Computer Programming (GI)
+ */
     internal class Program
     {
         static void Main(string[] args)
