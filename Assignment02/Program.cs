@@ -1,5 +1,11 @@
 ﻿using System.ComponentModel;
-
+/*
+ * Student ID : 1690700479
+ * Name       : Chutchapol Changsee
+ * Section    : 129A
+ * No.        : 
+ * Course     : GI113 Computer Programming (GI)
+ */
 namespace Assignment02
 {
     internal class Program
