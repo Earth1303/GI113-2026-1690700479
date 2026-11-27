@@ -6,7 +6,7 @@ namespace Assignment02
     {
         static void Main(string[] args)
         {
-            const String name = "earth";
+            const String name = "Music";
             const double smeltRate = 0.1700;
             const double salvageRate = 0.2800;
             const double maxBatch = 500.00;
@@ -23,15 +23,25 @@ namespace Assignment02
 
             if (!iskeychar || (key != 's' && key != 'S' && key != 'b' && key != 'B'))
             {
-                Console.WriteLine("error : plese text (s , S , B ,b)");
-            }
-            else if (key == 'S' || key == 's')
+                if (!iskeychar || (key != 's' && key != 'S' && key != 'b' && key != 'B'))
+                {
+                    Console.WriteLine("error : plese text (s , S , B ,b)");
+                }
+
+                else if (key == 'S' || key == 's')
                 {
                     Console.Write("How much do you want to Smelt (1-500): ");
                     bool isamountnum = double.TryParse(Console.ReadLine(), out double amount);
-                    if (!isamountnum || amount > maxBatch || amount <= 0)
+                    if (!isamountnum || (amount > maxBatch && amount <= 0))
                     {
-                        Console.WriteLine("error : plese text (1-500)");
+                        if (amount > maxBatch && amount <= 0)
+                        {
+                            Console.WriteLine("error : plese text (1-500)");
+                        }
+                        else
+                        {
+                            Console.WriteLine("error : plese text (1-500)");
+                        }
                     }
                     else if (amount <= maxBatch && (amount > 0))
                     {
@@ -44,13 +54,20 @@ namespace Assignment02
                     }
 
                 }
-            else if (key == 'B' || key == 'b')
+                else if (key == 'B' || key == 'b')
                 {
                     Console.Write("How much do you want to Breakdown ( 1-500 ): ");
                     bool isamountnum = double.TryParse(Console.ReadLine(), out double amount);
-                    if (!isamountnum || amount > maxBatch || amount <= 0)
+                    if (!isamountnum)
                     {
-                        Console.WriteLine("error : plese text (1-500)");
+                        if (amount > maxBatch && amount <= 0)
+                        {
+                            Console.WriteLine("error : plese text (1-500)");
+                        }
+                        else
+                        {
+                            Console.WriteLine("error : plese text (1-500)");
+                        }
                     }
                     else if (amount <= maxBatch && (amount > 0))
                     {
@@ -65,3 +82,4 @@ namespace Assignment02
             }
         }
     }
+}
