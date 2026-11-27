@@ -6,7 +6,7 @@ namespace Assignment02
     {
         static void Main(string[] args)
         {
-            const String name = "Music";
+            const String name = "earth";
             const double smeltRate = 0.1700;
             const double salvageRate = 0.2800;
             const double maxBatch = 500.00;
